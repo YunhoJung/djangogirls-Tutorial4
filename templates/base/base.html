@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MY BLOG</title>
+</head>
+<body>
+<h1>오늘은 즐거운 하루</h1>
+<div>
+    {% for post in posts %}
+
+    <h3>{{ post.title }}</h3>
+</div>
+{% endfor %}
+</body>
+</html>
+<!--문법 변수-->
