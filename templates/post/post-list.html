@@ -7,6 +7,9 @@
     {% for post in posts %}
 
     <h3>{{ post.title }}</h3>
+        <p><small>published : {{ post.published_date }}</small></p>
+        <p>{{ post.text }}</p>
+        <p>{{ post.text|truncatechars:120}}</p> # 120자 넘으면 ... 표시
 </div>
 {% endfor %}
 
