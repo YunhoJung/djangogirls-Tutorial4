@@ -42,6 +42,7 @@ def post_add_view(request):
 
 
 def post_detail_view(request, pk):
+    print('post_detail_view :', pk)
     context = {
         'post': Post.objects.get(pk=pk)
     }

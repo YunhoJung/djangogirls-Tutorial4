@@ -5,12 +5,10 @@
     <h1>오늘은 즐거운 하루</h1>
 <div>
     {% for post in posts %}
-
-    <h3>{{ post.title }}</h3>
-        <p><small>published : {{ post.published_date }}</small></p>
-        <p>{{ post.text }}</p>
-        <p>{{ post.text|truncatechars:120}}</p> # 120자 넘으면 ... 표시
-</div>
+    	<h4><a href="{% url 'post_detail' pk=post.id %}">{{ post.title }}</a></h4>
+  		<p class="text-right"><small>published: {{ post.published_date }}</small></p>
+  		<p>{{ post.text|truncatechars:120 }}</p>
+{#        120자 넘으면 표시#}</div>
 {% endfor %}
 
 {% endblock %}}
