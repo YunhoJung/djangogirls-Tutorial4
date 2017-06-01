@@ -1,10 +1,11 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-    <form action="{% url 'post_add' %}" method="POST">{% csrf_token %} # default값이  자기 값. 보안상 form사용
+    <form action="{% url 'post_add' %}" method="POST">{% csrf_token %}
 
     {{ forms }}
        <button type="submit">작성하기</button>
 
     </form>
 {% endblock %}}
+{## default값이  자기 값. 보안상 form사용#}

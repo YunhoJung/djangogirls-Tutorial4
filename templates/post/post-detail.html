@@ -1,13 +1,15 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-	<div class="container">
- 		<div class="header">
- 			<h1><a href="#">Django Girls Blog</a></h1>
- 			<h4>{{ title }}</h4>
- 		</div>
 
- 		<div class="post-list">
- 			<div class="post">
- 			<h4><a href="">{{ post.title }}</a></h4>
+    <div class="post">
+
+        <h4><a href="">{{ post.title }}</a></h4>
+        <p class="text-right">
+            <small>published: {{ post.published_date }}</small>
+        </p>
+
+
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endblock %}

@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^$', views.main_view, name='post_main'),
     url(r'^postadd/', views.post_add_view, name='post_add'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail_view, name='post_detail'),
+    url(r'^post/(?P<pk>\d+)/modify/$', views.post_modify_view, name='post_modify'),
 
 ]
