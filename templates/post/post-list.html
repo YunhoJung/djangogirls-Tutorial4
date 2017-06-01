@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <h1>오늘은 즐거운 하루</h1>
+<div>
+    {% for post in posts %}
+
+    <h3>{{ post.title }}</h3>
+</div>
+{% endfor %}
+
+{% endblock %}}

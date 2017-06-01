@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!doctype html>
 <html lang="ko">
 <head>
@@ -8,13 +9,11 @@
     <title>MY BLOG</title>
 </head>
 <body>
-<h1>오늘은 즐거운 하루</h1>
-<div>
-    {% for post in posts %}
+{% block content %}
 
-    <h3>{{ post.title }}</h3>
-</div>
-{% endfor %}
+
+
+{% endblock %}
 </body>
 </html>
-<!--문법 변수-->
+<!--문법/ 변수-->
